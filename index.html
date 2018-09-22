@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Loan Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body class="bg-dark">
+    <div class="container">
+       <div class="row">
+           <div class="col-6 mx-auto">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Loan Calculator</h5>
+                        <h6 class="card-subtitle mb-2 text-muted text-center">by Arshad Umrethi</h6>
+                        <form action="" id="loan-form">
+                            <!-- Currency Selector -->
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Select Currency:</label>
+                                    <select class="form-control-sm mt-4" id="currency-select">
+                                        <option>₹</option>
+                                        <option>£</option>
+                                        <option>$</option>
+                                    </select>
+                            </div>
+                            <!-- Inputs -->
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text" id="curr-symbol">/</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="amount" placeholder="Amount">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">%</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="interest" placeholder="Interest Rate">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                            <select class="form-control-sm mt-1 mr-2" id="term-select">
+                                                <option>Years</option>
+                                                <option>Months</option>
+                                            </select>
+                                    </div>
+                                    <input type="number" class="form-control" id="term" placeholder="Term">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group">                                
+                                    <input type="submit" class="btn btn-primary btn-block" placeholder="">
+                                </div>
+                            </div>
+                        </form>
+                            <!-- Loading Image -->
+                            <!-- <div id="loading" class="text-center">
+                                <img src="/loading.gif" alt="">
+                            </div> -->
+
+                            <!--Results / To Pay -->
+                            <div id="to-pay">
+                                <h5 style="text-align: center">Amount to be Paid</h5>
+                            <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Monthly</div>
+                                        </div>
+                                        <input type="number" class="form-control" id="monthly-payment" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Total</div>
+                                        </div>
+                                        <input type="number" class="form-control" id="total-payment" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">Total Interest</div>
+                                        </div>
+                                        <input type="number" class="form-control" id="total-interest" placeholder="">
+                                    </div>
+                                </div>
+                            </div>  
+                        
+                    </div>
+                </div>
+           </div>
+       </div>
+    </div>
+
+
+
+ 
+</body>
+
+<script src="app.js"></script> 
+</html>
